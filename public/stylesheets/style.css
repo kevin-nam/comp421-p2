@@ -1,0 +1,298 @@
+html, body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 20px 0 0 20px;
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.fullpage {
+	height: 100%;
+	width: 100%;
+}
+
+.column {
+	height: 100%;
+}
+
+.white {
+  background-color: white;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.red {
+	background-color: red;
+}
+
+.green {
+	background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.grey {
+  background-color: #123acc;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.toprow {
+  height: 40%;
+}
+
+#nextflight {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  background-color: #2e2e2e;
+}
+
+#country {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  background-size: cover;
+}
+
+#country h1 {
+  padding-left: 0.5em;
+  font-size: 4em;
+  color: white;
+}
+
+#countryfull {
+  background-size: cover;
+  color: white;
+  font-size: 4em;
+  opacity: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+#countryfull .arrow {
+  font-size: 0.7em;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+#food {
+  background-size: cover;
+}
+
+#activity {
+  background-size: cover;
+}
+
+.display{
+  height: 50%;
+  border: 1px black solid;
+  text-align: left;
+}
+
+.entity {
+  border: 1px black dotted;
+  overflow: scroll;
+}
+
+.display p {
+  margin-left: 14px;
+}
+
+.control {
+  height: 30%;
+}
+
+.item h1 {
+  padding-left: 0.5em;
+  font-size: 4em;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.background-transition {
+  -webkit-transition: background-position 3s ease, opacity 1s;
+  transition: background-position 3s ease, opacity 1s;
+  background-position: 50% 50%;
+  opacity: 1;
+}
+
+.background-transition:hover {
+  background-position: 50% 60%;
+  opacity: 0.8;
+}
+
+.footer {
+	height: 10%;
+}
+
+#title {
+  max-height: 15%;
+  width: 97%;
+}
+
+#image {
+  margin-top: 0.7em;
+  height: 42%;
+  width: 75%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+#image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#review {
+  max-height: 20%;
+  width: 80%;
+  margin-top: 0.5em;
+
+  text-align: left;
+  overflow: scroll;
+}
+
+.star {
+  color: orange;
+}
+
+#rating {
+  height: 20%;
+  width: 100%;
+
+}
+
+#comment {
+  height: 75%;
+  width: 100%;
+
+}
+
+#choice {
+  margin-top: 1em;
+  height: 10%;
+  width: 80%;
+}
+
+#yes {
+  border: #13c156 solid 2px;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+}
+
+#yes:hover {
+  background-color: #13c156;
+}
+
+#next {
+  border: #1ba0f9 solid 2px;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+}
+
+#next:hover {
+  background-color: #1ba0f9;
+}
+
+#disclosure {
+  position: absolute;
+  bottom: 0;
+}
+
+#disclosure p {
+  font-size: 6px;
+}
+
+#flag-desktop {
+  position: absolute;
+  right: 2%;
+  bottom: 1%
+}
+
+#flag-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .col-md-3 {
+      display: none
+    }
+
+    #title {
+      max-height: 20%;
+      width: 100%;
+    }
+
+    #title h2 {
+      font-size: 2em;
+    }
+
+    html, body {
+      font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
+      top: 0;
+      left: 0;
+
+      height: 100%;
+      width: 100%;
+    }
+
+    #image {
+      margin-top: 2px;
+      height: 42%;
+      width: 75%;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+
+    }
+
+    #review {
+      max-height: 20%;
+      width: 80%;
+      margin-top: 0.2em;
+
+      text-align: left;
+      overflow: scroll;
+    }
+
+    #disclosure {
+      position: absolute;
+      bottom: -12%;
+    }
+
+    #flag-mobile {
+      display: inline;
+      position: absolute;
+    }
+
+
+    #flag-desktop {
+      display: none;
+    }
+}

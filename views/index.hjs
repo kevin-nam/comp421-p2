@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <div id="productpage i-want-to-buy-something show-me-cool-things-to-buy" class="fullpage container-fluid text-center content">
+
+  	  <div class="column col-md-12">
+
+        <h1>{{ title }}</h1>
+
+        <div class="display">
+          <div class="entity column col-md-4">
+            Customer
+          </div>
+          <div class="entity column col-md-4">
+            Employee
+          </div>
+          <div class="entity column col-md-4">
+            Store
+          </div>
+        </div>
+        <br />
+        <div class="control">
+
+          <div class="column col-md-4">
+            <h4>Add Customer</h4>
+            Email:
+            <input type="text"/><br />
+            Phone:
+            <input type="text"/><br />
+            Address
+            <input type="text"/><br />
+            Name:
+            <input type="text"/><br />
+            <input type="submit" />
+          </div>
+
+          <div class="column col-md-4">
+            <h4>Add Employee</h4>
+            Email:
+            <input type="text"/><br />
+            Phone:
+            <input type="text"/><br />
+            Address
+            <input type="text"/><br />
+            Name:
+            <input type="text"/><br />
+            <input type="submit" />
+          </div>
+
+          <div class="column col-md-4">
+            <h4>Add Store</h4>
+            Email:
+            <input type="text"/><br />
+            Phone:
+            <input type="text"/><br />
+            Address
+            <input type="text"/><br />
+            Name:
+            <input type="text"/><br />
+            <input type="submit" />
+          </div>
+
+          <input type="submit" value="reset"/>
+
+        </div>
+
+
+      </div>
+
+    </div>
+  </body>
+</html>
